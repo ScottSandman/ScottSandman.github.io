@@ -1,0 +1,11 @@
+.blogTemplate .blogTemplate-title {
+  margin: 30px 0 0px;
+}
+
+.blogTemplate .blogTemplate-posted-by {
+  font-size: 1em;
+}
+
+.blogTemplate a {
+  color: #fff;
+}
