@@ -1,13 +1,127 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Scott Sandman's Blog]]></title><description><![CDATA[A blog detailing my learning experiences on the path to becoming a Full Stack Developer]]></description><link>https://scottsandman.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 20 Apr 2020 00:58:13 GMT</lastBuildDate><item><title><![CDATA[Knock, Knock, Knock, Penny]]></title><description><![CDATA[Using a simple tap() for debugging curried functions]]></description><link>https://scottsandman.github.io/knock-knock-knock-penny/knock-knock-knock-penny/</link><guid isPermaLink="false">https://scottsandman.github.io/knock-knock-knock-penny/knock-knock-knock-penny/</guid><pubDate>Fri, 17 Apr 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;./knock-knock-knock-penny.jpg&quot; alt=&quot;Image of Knock, knock, knock, Penny&quot; title=&quot;We&amp;#x27;ve all been there&quot;&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Scott Sandman's Blog]]></title><description><![CDATA[A blog detailing my learning experiences on the path to becoming a Full Stack Developer]]></description><link>https://scottsandman.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 20 Apr 2020 11:52:22 GMT</lastBuildDate><item><title><![CDATA[Knock, Knock, Knock, Penny]]></title><description><![CDATA[Using a simple tap() for debugging curried functions]]></description><link>https://scottsandman.github.io/knock-knock-knock-penny/knock-knock-knock-penny/</link><guid isPermaLink="false">https://scottsandman.github.io/knock-knock-knock-penny/knock-knock-knock-penny/</guid><pubDate>Fri, 17 Apr 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 299px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/32dacb8dd6581c7d5c5e2da8d024e7e5/f6c98/knock-knock-knock-penny.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.44171779141104%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAALABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAMCBP/EABUBAQEAAAAAAAAAAAAAAAAAAAAB/9oADAMBAAIQAxAAAAHgs0RRJ//EABwQAAICAgMAAAAAAAAAAAAAAAECAxEAEhMhMv/aAAgBAQABBQLkamkFlsXx1UgG/wD/xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAVEQEBAAAAAAAAAAAAAAAAAAAAEf/aAAgBAgEBPwFX/8QAGxAAAgIDAQAAAAAAAAAAAAAAAAEhIgIRkTH/2gAIAQEABj8CRXR6KFwVceDg/8QAHBAAAgICAwAAAAAAAAAAAAAAABEBMSFBYYGh/9oACAEBAAE/IUUa0L3Tky0Elkl3CRMeErTo/9oADAMBAAIAAwAAABDnP//EABYRAQEBAAAAAAAAAAAAAAAAAAEAEf/aAAgBAwEBPxARLL//xAAXEQEAAwAAAAAAAAAAAAAAAAAAEVFx/9oACAECAQE/ENRp/8QAHhABAAICAQUAAAAAAAAAAAAAAQARITFBUWGBweH/2gAIAQEAAT8QXVkCy9PmPoT7ltM+4zVGiiocheyG3lI74Ki/CYeBjAo0cE//2Q==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Image of Knock, knock, knock, Penny&quot;
+        title=&quot;We&amp;#39;ve all been there&quot;
+        src=&quot;/static/32dacb8dd6581c7d5c5e2da8d024e7e5/f6c98/knock-knock-knock-penny.jpg&quot;
+        srcset=&quot;/static/32dacb8dd6581c7d5c5e2da8d024e7e5/d2f63/knock-knock-knock-penny.jpg 163w,
+/static/32dacb8dd6581c7d5c5e2da8d024e7e5/f6c98/knock-knock-knock-penny.jpg 299w&quot;
+        sizes=&quot;(max-width: 299px) 100vw, 299px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;We&apos;ve all been there. That place where ever word and sound sends us further down the rabbit hole. Most certainly we will be there again. Hopefully what I&apos;m about to share with you will help limit how bad &quot;there&quot; gets.&lt;/p&gt;
 &lt;p&gt;Originally, I was going to call this posting &quot;Tap, Tap, Tap&quot; (you&apos;ll see why later), but as I was musing, &quot;knock, knock, knock, Penny&quot; kept coming to mind. The entire series of them. Then I found the image and here we are.&lt;/p&gt;
 &lt;p&gt;Recently our class at JRS Code School took a dive into Functional Programming (FP). Im not going to get to deep into defining FP. For those of you not familiar with FP and would like to learn more I recommend bookmarking this post or adding to it your RSS feed and heading over to &lt;a href=&quot;https://fpjs.now.sh/docs/contents&quot;&gt;Functional Javascript&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;If you&apos;ve made it this far, then there is a strong possibility that you have at some point struggled with a curried function. I struggled mightily with a few until being introduced to this tiny little tap function. Let&apos;s take a look at a curried function and then I&apos;ll show you how tap works. The following curried function uses Ramda functions compose, reduce, sort and map to return an array of a deck of playing cards in face value order. The compose function reads the other functions from right-to-left (if you prefer left-to-right you can use pipe) so the deck of cards array is passed into the map function which creates a new array of the card objects key &quot;code&quot;, which is then passed to sort to (obviously) sort it and finally it is passed to reduce where a new array of the card objects is returned in sorted order.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;./curried-function.jpg&quot; alt=&quot;Image of curried function&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 650px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/92d0d61d5cbff78a468126776e8c2e1a/49b61/curried-function.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 53.987730061349694%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAALABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAIF/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEAMQAAAByJqQD//EABUQAQEAAAAAAAAAAAAAAAAAABAB/9oACAEBAAEFAmv/xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAUEAEAAAAAAAAAAAAAAAAAAAAg/9oACAEBAAY/Al//xAAXEAADAQAAAAAAAAAAAAAAAAABEBFB/9oACAEBAAE/ITY8P//aAAwDAQACAAMAAAAQ08//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/ED//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/ED//xAAZEAACAwEAAAAAAAAAAAAAAAABEBExUWH/2gAIAQEAAT8QkCoA1lTj/9k=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Image of curried function&quot;
+        title=&quot;Image of curried function&quot;
+        src=&quot;/static/92d0d61d5cbff78a468126776e8c2e1a/6aca1/curried-function.jpg&quot;
+        srcset=&quot;/static/92d0d61d5cbff78a468126776e8c2e1a/d2f63/curried-function.jpg 163w,
+/static/92d0d61d5cbff78a468126776e8c2e1a/c989d/curried-function.jpg 325w,
+/static/92d0d61d5cbff78a468126776e8c2e1a/6aca1/curried-function.jpg 650w,
+/static/92d0d61d5cbff78a468126776e8c2e1a/49b61/curried-function.jpg 752w&quot;
+        sizes=&quot;(max-width: 650px) 100vw, 650px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;The above function currently works, but at one time it did not. How did I debug it? By using a function called tap. Let&apos;s take a look at it.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;./tap-function.jpg&quot; alt=&quot;Image of tap function&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 650px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/2b9e707db9dac64ee70ab88285ef2276/23313/tap-function.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 11.042944785276074%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAACABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAEF/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEAMQAAABx4AH/8QAFBABAAAAAAAAAAAAAAAAAAAAEP/aAAgBAQABBQJ//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAFBABAAAAAAAAAAAAAAAAAAAAEP/aAAgBAQAGPwJ//8QAFRABAQAAAAAAAAAAAAAAAAAAARD/2gAIAQEAAT8hb//aAAwDAQACAAMAAAAQ88//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/ED//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/ED//xAAWEAEBAQAAAAAAAAAAAAAAAAABECH/2gAIAQEAAT8Qau3/2Q==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Image of tap function&quot;
+        title=&quot;Image of tap function&quot;
+        src=&quot;/static/2b9e707db9dac64ee70ab88285ef2276/6aca1/tap-function.jpg&quot;
+        srcset=&quot;/static/2b9e707db9dac64ee70ab88285ef2276/d2f63/tap-function.jpg 163w,
+/static/2b9e707db9dac64ee70ab88285ef2276/c989d/tap-function.jpg 325w,
+/static/2b9e707db9dac64ee70ab88285ef2276/6aca1/tap-function.jpg 650w,
+/static/2b9e707db9dac64ee70ab88285ef2276/23313/tap-function.jpg 741w&quot;
+        sizes=&quot;(max-width: 650px) 100vw, 650px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;See the three taps? That&apos;s why the draft title of this post was Tap, Tap, Tap. But, you can call it whatever you like. Tap just seems a fitting name as it taps into the sequence of curried functions and gets called in the sequence along with the other functions. Here&apos;s a look at it put into action.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;./curried-function-with-tap.jpg&quot; alt=&quot;Image of curried function with tap function inserted&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 650px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/f27bc85d08140252cae518f0d018862c/9bc89/curried-function-with-tap.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 60.73619631901841%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAMABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAIF/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEAMQAAAByJqQD//EABUQAQEAAAAAAAAAAAAAAAAAABAB/9oACAEBAAEFAmv/xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAUEAEAAAAAAAAAAAAAAAAAAAAg/9oACAEBAAY/Al//xAAWEAADAAAAAAAAAAAAAAAAAAABIDH/2gAIAQEAAT8hMZ//2gAMAwEAAgADAAAAENPP/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPxA//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPxA//8QAGhAAAgIDAAAAAAAAAAAAAAAAAREQITFRcf/aAAgBAQABPxBiFhLcljk//9k=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Image of curried function with tap function inserted&quot;
+        title=&quot;Image of curried function with tap function inserted&quot;
+        src=&quot;/static/f27bc85d08140252cae518f0d018862c/6aca1/curried-function-with-tap.jpg&quot;
+        srcset=&quot;/static/f27bc85d08140252cae518f0d018862c/d2f63/curried-function-with-tap.jpg 163w,
+/static/f27bc85d08140252cae518f0d018862c/c989d/curried-function-with-tap.jpg 325w,
+/static/f27bc85d08140252cae518f0d018862c/6aca1/curried-function-with-tap.jpg 650w,
+/static/f27bc85d08140252cae518f0d018862c/9bc89/curried-function-with-tap.jpg 755w&quot;
+        sizes=&quot;(max-width: 650px) 100vw, 650px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;What does it do? Well, it simply accepts the return value of the previous function as a parameter, logs that parameter to the console and then returns that value to the next function allowing you to see the output at each step of the curried function. Pretty simple, right? It&apos;s been very helpful to me in understanding how a curried function works and how to alter my code accordingly to get the desired outputs.&lt;/p&gt;
 &lt;p&gt;I hope you can find use for this little tidbit. I know I have and in the process have limited the number of times I have had to look like dear, sweet Penny up above.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[The Great Gatsby]]></title><description><![CDATA[My First Venture into Gatsby and GraphQL]]></description><link>https://scottsandman.github.io/the-great-gatsby/</link><guid isPermaLink="false">https://scottsandman.github.io/the-great-gatsby/</guid><pubDate>Mon, 13 Apr 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Well, here we are. The first post of my recently constructed blog. How did we get here? It all started a couple weeks ago in JRS Code School video class session (pandemic and all). &lt;a href=&quot;https://robertwpearce.com/&quot;&gt;Robert Pearce&lt;/a&gt;, a Senior Software Engineer, took some time out of his day to speak with us prospective developers. One of the items he touched on during our discussion was &quot;learning in public&quot;.&lt;/p&gt;
 &lt;p&gt;I thought about what he meant by learning in public for a few days and was having a tough time wrapping my head around what it meant. Was I suppose to be on Facebook and Twitter all the time? I&apos;m not, by the way. So I reach out to Robert and asked. He responded with &quot;This will tell you everything you need to know: &lt;a href=&quot;https://www.swyx.io/writing/learn-in-public/&quot;&gt;https://www.swyx.io/writing/learn-in-public/&lt;/a&gt; &quot;.&lt;/p&gt;
