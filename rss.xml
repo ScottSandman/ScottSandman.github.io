@@ -1,4 +1,109 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Scott Sandman's Blog]]></title><description><![CDATA[A blog detailing my learning experiences on the path to becoming a Full Stack Developer]]></description><link>https://scottsandman.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 28 Apr 2020 19:21:37 GMT</lastBuildDate><item><title><![CDATA[React Hooks]]></title><description><![CDATA[Using React Hooks as an Alternate to Classes and Props]]></description><link>https://scottsandman.github.io/react-hooks/</link><guid isPermaLink="false">https://scottsandman.github.io/react-hooks/</guid><pubDate>Tue, 28 Apr 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Last week at JRS Code School, we began building web applications with React. In a lot of ways, this was a refresher for me, having taken an online mobile app development course which utilized React Native. But, as mostly is the case, there are multiple solutions to every problem. In the aforementioned class and other classes I have taken, the approach has been to use Object Oriented Programming (OOP) utilizing the Class structure. However, for the past several weeks, our studies at JRS have been focused on using a functional approach as our solutions. React hooks fit nicely into that approach.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Scott Sandman's Blog]]></title><description><![CDATA[A blog detailing my learning experiences on the path to becoming a Full Stack Developer]]></description><link>https://scottsandman.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 29 Apr 2020 16:55:18 GMT</lastBuildDate><item><title><![CDATA[React Hook - useEffect]]></title><description><![CDATA[Using React Hook useEffect to update state]]></description><link>https://scottsandman.github.io/react-useEffect/react-useEffect/</link><guid isPermaLink="false">https://scottsandman.github.io/react-useEffect/react-useEffect/</guid><pubDate>Wed, 29 Apr 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;In the last post, we discussed the use of React hooks in lieu of using the class method and props to manage and update state. To get a better understanding of the benefits of using hooks, we need to take another look at a class method:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;import React from &quot;react&quot;
+
+class App extends React.Component {
+  constructor(props) {
+    super(props)
+
+    this.state = {
+      firstName: &quot;Henry&quot;,
+      lastName: &quot;Smith&quot;,
+    }
+  }
+  render() {
+    return (
+      &amp;#x3C;div&gt;
+        &amp;#x3C;h1&gt;First Name: {this.state.firstName}&amp;#x3C;/h1&gt;
+        &amp;#x3C;h2&gt;Last Name: {this.state.lastName}&amp;#x3C;/h2&gt;
+      &amp;#x3C;/div&gt;
+    )
+  }
+}
+
+export default App
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;As you can see, a constructor is used to handle props, this.state is used to set initial values and this.state.firstName calls the state for rendering. Simple enough. But what if we want to manage the state throughout the lifecycle of our app? At this point we are talking about writing methods, getter methods, implementing this.setState() and using an assortment of predefined lifecycle methods such as:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;componentWillMount()
+componentDidMount()
+componentWillUpdate()
+componentWillUnmount()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;It&apos;s getting quite a bit more involved now to set and manage our state; not to mention the amount of code is growing which means the chances of bugs is increasing. Enter the magic of hooks. If you recall from the previous post, useState not only allows us to set our state, but also defines an update method:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;import React, { useState } from &quot;react&quot;
+
+function App() {
+  const [firstName, setFirstName] = useState(&quot;Henry&quot;)
+  const [lastName, setLastName] = useState(&quot;Smith&quot;)
+
+  return (
+    &amp;#x3C;div&gt;
+      &amp;#x3C;h1&gt;First Name: {firstName}&amp;#x3C;/h1&gt;
+      &amp;#x3C;h2&gt;Last Name: {lastName}&amp;#x3C;/h2&gt;
+    &amp;#x3C;/div&gt;
+  )
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;At this point in the class method, we would need to begin adding all of our lifecycle methods to set and control state. Say hello to the hook, useEffect() which replaces them all. Yup, one hook to replace all of those predefined lifecycle methods. UseEffect takes two parameters; the first being a callback function. We&apos;ll talk about the second parameter in a moment.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;import React, { useState, useEffect } from &quot;react&quot;
+
+function App() {
+  const [firstName, setFirstName] = useState(&quot;&quot;)
+  const [lastName, setLastName] = useState(&quot;&quot;) //initial state set to empty strings
+
+  useEffect(() =&gt; {
+    setFirstName(&quot;Henry&quot;)
+    setLastName(&quot;Smith&quot;) //set state in useEffect
+  })
+
+  return (
+    &amp;#x3C;div&gt;
+      &amp;#x3C;h1&gt;First Name: {firstName}&amp;#x3C;/h1&gt;
+      &amp;#x3C;h2&gt;Last Name: {lastName}&amp;#x3C;/h2&gt;
+    &amp;#x3C;/div&gt;
+  )
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;In the example above, we set our initial states to empty strings and then updated them in useEffect() which executes when the page initially loads. This brings us to the second parameter. If we don&apos;t provide one, useEffect() will go into an infinite loop as it runs each time the app renders. By adding an empty array as a second parameter, we can tell useEffect to run only the single time.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;import React, { useState, useEffect } from &quot;react&quot;
+
+function App() {
+  const [firstName, setFirstName] = useState(&quot;&quot;)
+  const [lastName, setLastName] = useState(&quot;&quot;)
+
+  useEffect(() =&gt; {
+    setFirstName(&quot;Henry&quot;)
+    setLastName(&quot;Smith&quot;)
+  }, []) //use empty array to execute just once
+
+  return (
+    &amp;#x3C;div&gt;
+      &amp;#x3C;h1&gt;First Name: {firstName}&amp;#x3C;/h1&gt;
+      &amp;#x3C;h2&gt;Last Name: {lastName}&amp;#x3C;/h2&gt;
+    &amp;#x3C;/div&gt;
+  )
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;However, if we want useEffect() to monitor our state, we simply need to tell it which state items to watch. We do this by adding them into the second parameter array. Then, anytime there is a call to update the state we are monitoring, useEffect() will execute.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;import React, { useState, useEffect } from &quot;react&quot;
+
+function App() {
+  const [firstName, setFirstName] = useState(&quot;&quot;)
+  const [lastName, setLastName] = useState(&quot;&quot;)
+
+  useEffect(() =&gt; {
+    setFirstName(&quot;Henry&quot;)
+    setLastName(&quot;Smith&quot;)
+  }, [firstName, lastName]) //monitors for changes
+
+  return (
+    &amp;#x3C;div&gt;
+      &amp;#x3C;h1&gt;First Name: {firstName}&amp;#x3C;/h1&gt;
+      &amp;#x3C;h2&gt;Last Name: {lastName}&amp;#x3C;/h2&gt;
+    &amp;#x3C;/div&gt;
+  )
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This is a pretty simple example of useEffect(), but I think it demonstrates enough to show its ease of use and elegance. Add in the fact useEffect() reduces the amount of code we have to generate, I&apos;m all for it. How about you?&lt;/p&gt;</content:encoded></item><item><title><![CDATA[React Hooks]]></title><description><![CDATA[Using React Hooks as an Alternate to Classes and Props]]></description><link>https://scottsandman.github.io/react-hooks/</link><guid isPermaLink="false">https://scottsandman.github.io/react-hooks/</guid><pubDate>Tue, 28 Apr 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Last week at JRS Code School, we began building web applications with React. In a lot of ways, this was a refresher for me, having taken an online mobile app development course which utilized React Native. But, as mostly is the case, there are multiple solutions to every problem. In the aforementioned class and other classes I have taken, the approach has been to use Object Oriented Programming (OOP) utilizing the Class structure. However, for the past several weeks, our studies at JRS have been focused on using a functional approach as our solutions. React hooks fit nicely into that approach.&lt;/p&gt;
 &lt;p&gt;First, let&apos;s take a look at a class method which uses props and state:&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
